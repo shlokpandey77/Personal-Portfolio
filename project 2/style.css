@@ -1,0 +1,86 @@
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: linear-gradient(
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.85)
+  ),
+  url('img/wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* NAV */
+.nav-link {
+  font-size: 17px;
+}
+
+/* TYPING EFFECT */
+.typing {
+  overflow: hidden;
+  border-right: 3px solid #fff;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(40, end) forwards, blink 0.8s step-end infinite;
+}
+@keyframes typing {
+  to { width: 100%; }
+}
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* FADE IN ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeInUp 1s ease forwards;
+  animation-play-state: paused;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.delay-1 { animation-delay: .3s; }
+.delay-2 { animation-delay: .6s; }
+.delay-3 { animation-delay: .9s; }
+
+/* SKILL CARDS */
+.skill-box {
+  transition: .3s;
+  background: wheat;
+}
+.skill-box:hover {
+  transform: translateY(-8px);
+  background: pink;
+}
+
+/* PROJECT CARDS */
+.project-card {
+  transition: .3s;
+  background: lightgreen;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  background: whitesmoke;
+}
+
+/* GENERAL */
+section {
+  scroll-margin-top: 80px;
+}
+
+.qualification-card {
+  transition: 0.3s;
+}
+.qualification-card:hover {
+  transform: translateY(-10px);
+  background: black;
+}
